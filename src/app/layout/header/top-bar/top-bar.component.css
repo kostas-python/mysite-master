@@ -1,0 +1,52 @@
+.u-header {
+    background-color: #a83232; /* Modify as needed */
+    border-bottom: 1px solid #e0e0e0; /* Modify as needed */
+    padding: 10px 20px; /* Adjust padding as needed */
+  }
+  
+  .u-sheet-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .u-logo {
+    display: block;
+    height: auto;
+  }
+  
+  .menu-collapse {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .u-nav-container {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .u-nav {
+    list-style: none;
+    margin: 20px;
+    padding: 0;
+    display: flex;
+  }
+  
+  .u-nav-item {
+    margin-right: 20px; /* Adjust spacing between menu items as needed */
+  }
+  
+  .u-nav-link {
+    color: #333333; /* Modify link color as needed */
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: color 0.3s ease; /* Add transition for smooth hover effect */
+  }
+  
+  .u-nav-link:hover {
+    color: #007bff; /* Change color on hover as needed */
+  }
+  

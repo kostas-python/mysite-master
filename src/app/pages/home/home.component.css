@@ -1,4 +1,4 @@
-.u-block-be40-1 {background-image: none}
+/*.u-block-be40-1 {background-image: none}
 .u-block-be40-2 {min-height: 1027px}
 .u-block-be40-3 {margin-top: 60px; margin-bottom: 60px}
 .u-block-be40-4 {min-height: 599px}
@@ -17,4 +17,23 @@
 .u-block-be40-11 {padding: 30px}
 .u-block-be40-13 {font-style: italic; font-size: 1.23529rem; margin: 0}
 
+
+  */
+/* Set the width and height of the carousel */
+#carouselExampleAutoplaying {
+    width: 50%; /* Set the width of the carousel */
+    margin: auto; /* Center the carousel horizontally */
+}
+  
+  /* Set the motion from the right to the left */
+  .carousel-item {
+    transform: translateX(100%); /* Start the image from the right of the screen */
+    transition: transform 1s ease; /* Set the transition for smooth motion */
+    margin-top:50px;
+  }
+  
+  /* Set the active carousel item to stop in the center */
+  .carousel-item.active {
+    transform: translateX(0); /* Stop the active image in the center of the screen */
+  }
   

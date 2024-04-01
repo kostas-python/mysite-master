@@ -19,19 +19,19 @@
   .card-title {
     text-align: center;
     display: block;
-    margin-top: 50px; 
+    margin-bottom: 20px; 
     font-family: 'Roboto'; 
     font-weight: 500; 
     font-size: 55px;
-  }v
+  }
 
-  .card-title {
+  .card-text {
     text-align: center;
     display: block;
-    margin-top: 50px; 
+    margin-top: 20px; 
     font-family: 'Open Sans'; 
-    font-weight: 500; 
-    font-size: 55px;
+    font-weight: 50; 
+    font-size: 30px;
   }
 
 
@@ -43,6 +43,8 @@
     height:100%;
     max-width: 50%;
     margin-left: 30%;
+    margin-top: 0px;
+    margin-bottom: 10px;
   }
   
   

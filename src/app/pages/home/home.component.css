@@ -2,11 +2,13 @@
 #carouselExampleAutoplaying {
     width: 50%; 
     margin: auto; 
+    
 }
+
 
 .carousel-inner{
     margin-top:50px;
-    
+
 }
   
  
@@ -30,6 +32,16 @@ font-weight: 500;
 font-size: 55px;
 }
 
+
+.let.card-title {
+    color:white;
+}
+
+
+.let.card-text {
+    color:white;
+}
+
 .card-text {
 text-align: center;
 display: block;
@@ -38,6 +50,7 @@ margin-bottom: 50%;
 font-family: 'Open Sans'; 
 font-weight: 50; 
 font-size: 30px;
+
 }
 
 
@@ -56,18 +69,15 @@ margin-bottom: 10px;
 
 .about-card-body{
   margin-top: 0%;   
-  
-  
   background-size: cover; 
-
   padding: 20px; 
   border-radius: 10px; 
   
-
 }
 
 .container.text-center{
     background-image: url('/assets/images/about.jpg');
     background-size: cover; 
     max-width: 100%;
+    margin-bottom:50px;
 }

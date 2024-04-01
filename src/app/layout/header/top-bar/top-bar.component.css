@@ -1,19 +1,22 @@
 .u-header {
-    background-color: #a83232; /* Modify as needed */
-    border-bottom: 1px solid #e0e0e0; /* Modify as needed */
-    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #a83232; 
+    border-bottom: 1px solid #e0e0e0; 
+    padding: 10px 20px; 
+    height:100px;
   }
   
+  .h2 {
+   font-family: 'Roboto'; 
+   font-weight: 500; 
+   font-size: 55px;
+  }
+
   .u-sheet-1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-  .u-logo {
-    display: block;
-    height: auto;
-  }
   
   .menu-collapse {
     background-color: transparent;

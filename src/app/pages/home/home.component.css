@@ -1,39 +1,48 @@
-/*.u-block-be40-1 {background-image: none}
-.u-block-be40-2 {min-height: 1027px}
-.u-block-be40-3 {margin-top: 60px; margin-bottom: 60px}
-.u-block-be40-4 {min-height: 599px}
-.u-block-be40-5 {padding: 30px 30px 60px}
-.u-block-be40-23 {font-size: 3rem; margin: 0}
-.u-block-be40-24 {font-size: 1.11765rem; margin-top: 20px}
-.u-block-be40-6 {min-height: 299px}
-.u-block-be40-7 {padding: 30px}
-.u-block-be40-20 {height: 3px; transform-origin: left center; margin: 0}
-.u-block-be40-17,
-.u-block-be40-18,
-.u-block-be40-19 {text-transform: uppercase; letter-spacing: 1px; margin-top: 20px; margin-left: auto}
-.u-block-be40-8 {min-height: 754px; background-image: url("/f990ee5e1feb9/a1.jpg"); background-position: 0% 50%}
-.u-block-be40-9 {padding: 0}
-.u-block-be40-10 {min-height: 165px}
-.u-block-be40-11 {padding: 30px}
-.u-block-be40-13 {font-style: italic; font-size: 1.23529rem; margin: 0}
 
-
-  */
-/* Set the width and height of the carousel */
 #carouselExampleAutoplaying {
-    width: 50%; /* Set the width of the carousel */
-    margin: auto; /* Center the carousel horizontally */
+    width: 50%; 
+    margin: auto; 
 }
   
-  /* Set the motion from the right to the left */
+ 
   .carousel-item {
-    transform: translateX(100%); /* Start the image from the right of the screen */
-    transition: transform 1s ease; /* Set the transition for smooth motion */
+    transform: translateX(100%); 
+    transition: transform 1s ease; 
     margin-top:50px;
   }
   
-  /* Set the active carousel item to stop in the center */
+
   .carousel-item.active {
-    transform: translateX(0); /* Stop the active image in the center of the screen */
+    transform: translateX(0); 
   }
+
+  .card-title {
+    text-align: center;
+    display: block;
+    margin-top: 50px; 
+    font-family: 'Roboto'; 
+    font-weight: 500; 
+    font-size: 55px;
+  }v
+
+  .card-title {
+    text-align: center;
+    display: block;
+    margin-top: 50px; 
+    font-family: 'Open Sans'; 
+    font-weight: 500; 
+    font-size: 55px;
+  }
+
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    max-width: 50%;
+    margin-left: 30%;
+  }
+  
   

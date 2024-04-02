@@ -1,13 +1,14 @@
 
 #carouselExampleAutoplaying {
-    width: 50%; 
-    margin: auto; 
-    
+    width: 80%; 
+    margin: auto;
+
 }
 
 
 .carousel-inner{
     margin-top:50px;
+    margin-bottom:50px;
 
 }
   
@@ -23,14 +24,6 @@ margin-top:50px;
 transform: translateX(0); 
 }
 
-.card-title {
-text-align: center;
-display: block;
-margin-bottom: 20px; 
-font-family: 'Roboto'; 
-font-weight: 500; 
-font-size: 55px;
-}
 
 
 .let.card-title {
@@ -42,13 +35,14 @@ font-size: 55px;
 .let.card-text {
     color:white;
     
+    
 }
 
 .about-card-body{
   margin-top: 0%;   
   background-size: cover; 
   padding: 20px; 
-  border-radius: 10px; 
+  
   background-image: url('/assets/images/about.jpg');
   background-size: cover; 
   max-width: 100%;
@@ -56,15 +50,31 @@ font-size: 55px;
 }
 
 
+.btn-outline-light{
+    text-align: center;
+    
+}
+
+
 .card-text {
 text-align: center;
 display: block;
-margin-top: 20px; 
-margin-bottom: 50%;
+
 font-family: 'Open Sans'; 
 font-weight: 50; 
 font-size: 30px;
 
+
+}
+
+
+.card-title {
+text-align: center;
+display: block;
+margin-bottom: 20px; 
+font-family: 'Roboto'; 
+font-weight: 500; 
+font-size: 55px;
 }
 
 
@@ -74,13 +84,15 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 height:100%;
-max-width: 50%;
-margin-left: 30%;
+width: 100%;
+margin-left: 0%;
 margin-top: 0px;
-margin-bottom: 10px;
+margin-bottom: 0px;
+background-color: aqua;
 }
 
-
-
-
+.card{
+    height:100%;
+    width: 100%;
+}
 

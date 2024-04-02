@@ -35,12 +35,26 @@ font-size: 55px;
 
 .let.card-title {
     color:white;
-}
 
+}
+  
 
 .let.card-text {
     color:white;
+    
 }
+
+.about-card-body{
+  margin-top: 0%;   
+  background-size: cover; 
+  padding: 20px; 
+  border-radius: 10px; 
+  background-image: url('/assets/images/about.jpg');
+  background-size: cover; 
+  max-width: 100%;
+  margin-bottom:50px;
+}
+
 
 .card-text {
 text-align: center;
@@ -67,17 +81,6 @@ margin-bottom: 10px;
 }
 
 
-.about-card-body{
-  margin-top: 0%;   
-  background-size: cover; 
-  padding: 20px; 
-  border-radius: 10px; 
-  
-}
 
-.container.text-center{
-    background-image: url('/assets/images/about.jpg');
-    background-size: cover; 
-    max-width: 100%;
-    margin-bottom:50px;
-}
+
+

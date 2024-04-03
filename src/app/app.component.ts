@@ -5,16 +5,18 @@ import { CommonModule } from '@angular/common';
 import { TopBarComponent } from './layout/header/top-bar/top-bar.component';
 import { FooterComponent } from './layout/footer/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ContactComponent } from "./pages/contact/contact.component";
 
 
 
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, CommonModule, TopBarComponent,FooterComponent,HomeComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css',
+    imports: [RouterOutlet, CommonModule, TopBarComponent,
+        FooterComponent, HomeComponent, ContactComponent]
 })
 
 
@@ -28,4 +30,6 @@ export class AppComponent implements OnInit {
   ngOnInit() {
       this.primengConfig.ripple = true;
   }
+
+  
 }

@@ -1,4 +1,4 @@
-.u-header {
+/*.u-header {
     background-color: #a83232; 
     border-bottom: 1px solid #e0e0e0; 
     padding: 10px 20px; 
@@ -39,17 +39,27 @@
   }
   
   .u-nav-item {
-    margin-right: 20px; /* Adjust spacing between menu items as needed */
+    margin-right: 20px; /* Adjust spacing between menu items as needed 
   }
   
   .u-nav-link {
-    color: #333333; /* Modify link color as needed */
+    color: #333333; /* Modify link color as needed 
     text-decoration: none;
     padding: 10px 20px;
-    transition: color 0.3s ease; /* Add transition for smooth hover effect */
+    transition: color 0.3s ease; /* Add transition for smooth hover effect 
   }
   
   .u-nav-link:hover {
-    color: #007bff; /* Change color on hover as needed */
+    color: #007bff;  
   }
+  */
+
+.navbar {
   
+}
+
+  .container-fluid {
+    background-color:aqua;
+
+    
+  }

@@ -48,18 +48,25 @@
     padding: 10px 20px;
     transition: color 0.3s ease; /* Add transition for smooth hover effect 
   }
-  
-  .u-nav-link:hover {
-    color: #007bff;  
-  }
   */
 
-.navbar {
   
+  .nav-link:hover {
+    color: #007bff;  
+  }
+  
+.navbar {
+  height: 110px;
 }
 
-  .container-fluid {
-    background-color:aqua;
+  /*
+  image background
 
-    
+  .navbar {
+    background-image: url('/assets/images/about.jpg');
+    background-size: cover; /* This ensures the background image covers the entire navbar 
+    color: white; /* Set the color of the text to make it visible on the background image 
   }
+
+*/
+  

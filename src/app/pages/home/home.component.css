@@ -43,6 +43,7 @@ transform: translateX(0);
   background-size: cover; 
   padding: 20px; 
   
+  
   background-image: url('/assets/images/about.jpg');
   
   max-width: 100%;
@@ -88,7 +89,7 @@ width: 100%;
 margin-left: 0%;
 margin-top: 0px;
 margin-bottom: 0px;
-background-color: rgb(189, 210, 27);
+background-color: rgb(255, 255, 255);
 }
 
 .card {

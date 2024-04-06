@@ -1,80 +1,22 @@
-/*.u-header {
-    background-color: #a83232; 
-    border-bottom: 1px solid #e0e0e0; 
-    padding: 10px 20px; 
-    height:100px;
-  }
-  
-  .h2 {
-   font-family: 'Roboto'; 
-   font-weight: 500; 
-   font-size: 55px;
-  }
 
-  .u-sheet-1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  
-  .menu-collapse {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-  }
-  
-  .u-nav-container {
-    display: flex;
-    align-items: center;
-    
-  }
-  
-  .u-nav {
-    list-style: none;
-    margin: 20px;
-    padding: 0;
-    display: flex;
-  }
-  
-  .u-nav-item {
-    margin-right: 20px; /* Adjust spacing between menu items as needed 
-  }
-  
-  .u-nav-link {
-    color: #333333; /* Modify link color as needed 
-    text-decoration: none;
-    padding: 10px 20px;
-    transition: color 0.3s ease; /* Add transition for smooth hover effect 
-  }
-  */
-
-  .navbar-nav {
-    margin-right: 100px;
-  }
-
-  .navbar-nav .nav-item {
-    margin-right: 50px;
-  }
-
-
-  .nav-link:hover {
-    color: #007bff;  
-  }
-  
-.navbar {
-  height: 110px;
+.navbar-nav {
+  margin-right: 100px;
 }
 
-  /*
-  image background
+.navbar-nav .nav-item {
+  margin-right: 50px;
+}
 
-  .navbar {
-    background-image: url('/assets/images/about.jpg');
-    background-size: cover; /* This ensures the background image covers the entire navbar 
-    color: white; /* Set the color of the text to make it visible on the background image 
-  }
 
-*/
+.nav-link:hover {
+  color: #007bff;
+
+}
+
+.navbar {
+  height: 110px;
+
+}
+
+
   

@@ -116,6 +116,7 @@ body {
       padding: 8px 16px;
       border: none;
       cursor: pointer;
+      margin-bottom: 30px;
    }
 }
 
@@ -137,3 +138,16 @@ body {
       }
    }
 }
+
+.image-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 100px;
+   
+ }
+ 
+
+ 
+ 
+ 

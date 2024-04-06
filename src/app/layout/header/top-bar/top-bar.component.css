@@ -50,7 +50,15 @@
   }
   */
 
-  
+  .navbar-nav {
+    margin-right: 100px;
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: 50px;
+  }
+
+
   .nav-link:hover {
     color: #007bff;  
   }

@@ -37,7 +37,7 @@ export class ContactComponent {
     };
 
 
-    this.http.post('http://bla/bla/bla', formData)
+    this.http.post('http://localhost:27017', formData)
       .subscribe({
         next: (response) => {
           console.log('Form submission successful!', response);

@@ -2,11 +2,14 @@ import express, { Request, Response } from 'express';
 import mongoose, { Document, Schema, Model } from 'mongoose';
 
 
-const app = express();
-const PORT = 27017;
 
-// Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/your_database_name', {
+const app = express();
+const PORT = 3000; 
+
+
+
+    // Connect to MongoDB
+mongoose.connect('mongodb://localhost/emaildetails', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
@@ -16,21 +19,39 @@ mongoose.connect('mongodb://localhost:27017/your_database_name', {
   .catch((error) => {
     console.error('Error connecting to MongoDB:', error);
   });
+  
 
-// Define a sample interface and model
+   // Define a sample interface and model
 interface Sample extends Document {
   name: string;
-  age: number;
+  email: string;
+  message: string;
 }
 
 const sampleSchema = new Schema<Sample>({
   name: String,
-  age: Number
+  email: String,
+  message: String
 });
 
 const SampleModel: Model<Sample> = mongoose.model('Sample', sampleSchema);
 
-// Define a sample API endpoint
+// Enable JSON body parsing
+app.use(express.json());
+
+// Define a POST endpoint to handle form data
+app.post('/api/samples', async (req: Request, res: Response) => {
+  try {
+    const { name, email, message } = req.body; // Assuming the form sends data in JSON format
+    const newSample = new SampleModel({ name, email, message });
+    await newSample.save();
+    res.status(201).json({ message: 'Sample data saved successfully' });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// Define a sample API endpoint to retrieve all samples
 app.get('/api/samples', async (req: Request, res: Response) => {
   try {
     const samples = await SampleModel.find();

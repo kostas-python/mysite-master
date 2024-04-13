@@ -37,16 +37,18 @@ export class ContactComponent {
     };
 
 
-    this.http.post('http://localhost:27017', formData)
-      .subscribe({
-        next: (response) => {
+    this.http.post('http://localhost:4200/contact', formData)
+      .subscribe(
+        (response) => {
           console.log('Form submission successful!', response);
-          contactForm.resetForm();
+          // Reset the form fields after successful submission
+          this.name = '';
+          this.email = '';
+          this.message = '';
         },
-
-        error: (error) => {
+        (error) => {
           console.error('Error submitting form:', error);
         }
-      });
+      );
   }
 }

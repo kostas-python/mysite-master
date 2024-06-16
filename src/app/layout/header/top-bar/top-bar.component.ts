@@ -14,5 +14,4 @@ import { ContactComponent } from 'src/app/pages/contact/contact.component';
 export class TopBarComponent {
   constructor(private router: Router) {}
 
-
 }

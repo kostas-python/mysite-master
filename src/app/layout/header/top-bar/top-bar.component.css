@@ -1,23 +1,4 @@
 
-.navbar-nav {
-  margin-right: 100px;
-}
-
-.navbar-nav .nav-item {
-  margin-right: 50px;
-}
-
-
-.nav-link:hover {
-  color: #007bff;
-
-}
-
-.navbar {
-  height: 110px;
-
-}
-
 .gradient-text {
   background: linear-gradient(to left, #4c4c4c, #f7f6f6, #f7f6f6,#4c4c4c, #f7f6f6, #f7f6f6);
   background-size: 300% 300%;

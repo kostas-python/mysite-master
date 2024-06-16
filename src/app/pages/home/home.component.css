@@ -26,47 +26,7 @@ transform: translateX(0);
 
 
 
-.let.card-title {
-    color:white;
 
-}
-  
-
-.let.card-text {
-    color:white;
-      
-    
-}
-
-.about-card-body{
-  margin-top: 0%;   
-  background-size: cover; 
-  padding: 20px; 
-  
-  
-  background-image: url('/assets/images/about.jpg');
-  
-  max-width: 100%;
-  margin-bottom:50px;
-}
-
-
-.btn-outline-light{
-    text-align: center;
-    
-}
-
-
-.card-text {
-text-align: center;
-display: block;
-
-font-family: 'Open Sans'; 
-font-weight: 50; 
-font-size: 30px;
-
-
-}
 
 
 .card-title {

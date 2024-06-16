@@ -20,6 +20,7 @@
     "@angular/router": "^17.3.0",
     "@ng-bootstrap/ng-bootstrap": "^16.0.0",
     "@popperjs/core": "^2.11.8",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
     "express": "^4.19.2",

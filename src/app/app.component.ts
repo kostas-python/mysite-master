@@ -17,16 +17,10 @@ import { TeamComponent } from './pages/team/team.component';
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
     imports: [RouterOutlet, CommonModule, TopBarComponent,
-        FooterComponent, HomeComponent, ContactComponent,RouterModule, RouterLink,
-      RouterLinkActive,TeamComponent]
+        FooterComponent, HomeComponent, ContactComponent, RouterLink,
+      RouterLinkActive,TeamComponent,RouterModule,RouterModule]
 })
 
 
 
-export class AppComponent implements OnInit {
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
-  title = 'mysite';
-
-}
+export class AppComponent {}

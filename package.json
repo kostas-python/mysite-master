@@ -15,7 +15,6 @@
     "@angular/core": "^18.0.4",
     "@angular/forms": "^18.0.4",
     "@angular/platform-browser-dynamic": "^18.0.4",
-    "@angular/router": "^18.0.4",
     "@popperjs/core": "^2.11.8",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.7",

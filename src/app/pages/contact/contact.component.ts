@@ -12,7 +12,7 @@ import { NgForm } from '@angular/forms';
   selector: 'app-contact',
   standalone: true,
   imports: [RouterLink, RouterOutlet,RouterModule,
-    TopBarComponent, FormsModule,ReactiveFormsModule,HttpClientModule],
+    TopBarComponent, FormsModule,ReactiveFormsModule,HttpClientModule,],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })

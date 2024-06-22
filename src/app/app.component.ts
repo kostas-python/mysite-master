@@ -6,6 +6,7 @@ import { FooterComponent } from './layout/footer/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from "./pages/contact/contact.component";
 import { TeamComponent } from './pages/team/team.component';
+import 'animate.css';
 
 
 

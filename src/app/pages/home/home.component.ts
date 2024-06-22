@@ -2,6 +2,7 @@ import { Component, } from '@angular/core';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 import 'src/styles.css'
 import { FooterComponent } from "../../layout/footer/footer/footer.component";
+import 'animate.css';
 
 
 

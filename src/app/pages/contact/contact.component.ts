@@ -2,7 +2,8 @@ import { Component,} from '@angular/core';
 import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 import { TopBarComponent } from 'src/app/layout/header/top-bar/top-bar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClient} from '@angular/common/http';
+import { NgForm } from '@angular/forms';
+import { ContactService } from 'src/app/services/contact.service';
 
 
 
@@ -19,8 +20,8 @@ import { HttpClient} from '@angular/common/http';
 
 
 
-export class ContactFormComponent {
-  formData = {
+export class ContactComponent {
+  formData: { firstName: string; lastName: string; email: string; phoneNumber: string; message: string } = {
     firstName: '',
     lastName: '',
     email: '',
@@ -28,21 +29,17 @@ export class ContactFormComponent {
     message: ''
   };
 
-
-
-  constructor(private http: HttpClient) { }
-
-
+  constructor(private contactService: ContactService) {}
 
   onSubmit() {
-    const url = 'http://localhost:3000/send-email';
-    this.http.post(url, this.formData).subscribe(
-      response => {
-        console.log('Email sent successfully!', response);
-      },
-      error => {
-        console.error('Error sending email', error);
-      }
-    );
+    this.contactService.sendEmail(this.formData)
+      .then(() => {
+        // Email sent successfully
+        console.log('Email sent successfully');
+      })
+      .catch((error) => {
+        // Error sending email
+        console.error('Error sending email:', error);
+      });
   }
 }

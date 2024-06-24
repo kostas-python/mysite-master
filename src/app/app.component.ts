@@ -9,7 +9,6 @@ import { TeamComponent } from './pages/team/team.component';
 import 'animate.css';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { NgModule } from '@angular/core';
 
 
 

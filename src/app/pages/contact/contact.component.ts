@@ -4,6 +4,7 @@ import { TopBarComponent } from 'src/app/layout/header/top-bar/top-bar.component
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgForm } from '@angular/forms';
 import { ContactService } from 'src/app/services/contact.service';
+import { EmailJSResponseStatus } from 'emailjs-com';
 
 
 
@@ -33,13 +34,11 @@ export class ContactComponent {
 
   onSubmit() {
     this.contactService.sendEmail(this.formData)
-      .then(() => {
-        // Email sent successfully
-        console.log('Email sent successfully');
+      .then((result: EmailJSResponseStatus) => {
+        console.log('Email sent successfully!', result.text);
       })
       .catch((error) => {
-        // Error sending email
-        console.error('Error sending email:', error);
+        console.error('Email sending failed:', error);
       });
   }
 }

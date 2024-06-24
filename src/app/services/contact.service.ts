@@ -10,16 +10,18 @@ import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 
 export class ContactService {
   constructor() {
-    emailjs.init('YOUR_USER_ID'); // Replace with your EmailJS user ID
+    emailjs.init('MY_USER_ID'); // Replace with my EmailJS user ID (for future ste up)
   }
 
 
+// for future set up
+
   sendEmail(data: { [key: string]: string }): Promise<EmailJSResponseStatus> {
     return emailjs.send(
-      'YOUR_SERVICE_ID',
-      'YOUR_TEMPLATE_ID',
+      'MY_SERVICE_ID',
+      'MY_TEMPLATE_ID',
       data,
-      'YOUR_USER_ID'
+      'MY_USER_ID'
     );
   }
 }

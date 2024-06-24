@@ -5,7 +5,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgForm } from '@angular/forms';
 import { ContactService } from 'src/app/services/contact.service';
 import { EmailJSResponseStatus } from 'emailjs-com';
-
+import { GoogleMapComponent } from 'src/app/google-map/google-map.component';
+import { GoogleMap, GoogleMapsModule } from '@angular/google-maps';
 
 
 
@@ -14,7 +15,7 @@ import { EmailJSResponseStatus } from 'emailjs-com';
   selector: 'app-contact',
   standalone: true,
   imports: [RouterLink, RouterOutlet,RouterModule,
-    TopBarComponent, FormsModule,ReactiveFormsModule,],
+    TopBarComponent, FormsModule,ReactiveFormsModule,GoogleMapsModule,GoogleMap],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
@@ -30,7 +31,9 @@ export class ContactComponent {
     message: ''
   };
 
+
   constructor(private contactService: ContactService) {}
+
 
   onSubmit() {
     this.contactService.sendEmail(this.formData)

@@ -4,6 +4,7 @@ import { Router, RouterLink, RouterModule } from '@angular/router';
 import { ContactComponent } from 'src/app/pages/contact/contact.component';
 
 
+
 @Component({
   selector: 'app-top-bar',
   standalone: true,

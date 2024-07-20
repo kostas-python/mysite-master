@@ -12,6 +12,13 @@ import { ContactComponent } from 'src/app/pages/contact/contact.component';
   styleUrl: './top-bar.component.css'
 })
 export class TopBarComponent {
-  constructor(private router: Router) {}
+  isMobileMenuOpen: boolean = false;
 
+  toggleMobileMenu() {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  }
+
+  closeMobileMenu() {
+    this.isMobileMenuOpen = false;
+  }
 }
